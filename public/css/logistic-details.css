@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+}
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+}
+
+hr {
+    border: 1px solid #112b3c;
+}
+
+/* CSS untuk Search Engine Bar */
+.search-bar {
+    margin-top: 1vw;
+}
+.search-engine {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: solid grey 1px;
+}
+.form-control {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-color: transparent;
+    background-color: transparent;
+}
+.icon-search {
+    cursor: pointer;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #112b3c;
+    color: white;
+    border-color: transparent;
+}
+
+/* Untuk dropdown sorting */
+.dropdown-sort {
+    background-color: transparent;
+    border: solid grey 1px;
+}
+.btn {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 3px;
+    width: 5vw;
+}
+
+/* Ukuran tulisan placeholder */
+::-webkit-input-placeholder {
+    font-size: 14px !important;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 14px !important;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 14px !important;
+}
+
+/* Untuk Card Item */
+.col-xs-2-5 {
+    /* border: solid red 2px; */
+    width: auto;
+    height: auto;
+}
+.col-xs-2-5 .card-content {
+    width: 100%;
+    height: auto;
+    margin: 0 3% 0 0;
+}
+.col-xs-2-5 .tulisan {
+    /* border: solid red 2px; */
+    padding: 0 1rem 0 0;
+    margin: 1% 0% 0% 0%;
+    line-height: 8px;
+    font-size: 18px;
+    color: black;
+    width: 60%;
+    text-decoration: none;
+}
+.col-xs-2-5 .isi {
+    /* border: solid red 2px; */
+    margin: 0 7% 0 3%;
+}
+.col-xs-2-5 .content-img {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.col-xs-2-5 img {
+    border-radius: 0;
+}
+.row b {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 5% 0;
+}
+
+/* Untuk Filter & Aksi */
+.title {
+    width: 15vw;
+    margin: 0 0 1% 0;
+    padding: 0;
+}
+.cards .title {
+    margin: 0 0 1% 1%;
+}
+.title .sub-title {
+    margin: 0.5% 0% 1% 0%;
+    padding: 0;
+}
+.title .kategori {
+    margin: 0;
+    padding: 0;
+}
+.title .kategori p {
+    font-size: 16px;
+    margin: 0% 0% 1% 0%;
+}
+.form-check-label {
+    font-size: 14px;
+}
+.button-action {
+    /* border: solid red 1px; */
+    width: 100%;
+    height: auto;
+}
+.button-action .btn-primary {
+    background-color: #112b3c;
+    border: none;
+    font-size: 14px;
+    color: white;
+    width: max-content;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
