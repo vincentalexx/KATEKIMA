@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+}
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0%;
+}
+
+hr.container {
+    border: 1px solid #112b3c;
+    margin-bottom: 0%;
+}
+
+/* buat tulisan di navbar  */
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #f66b0e;
+    border-bottom: #f66b0e solid 1px;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #f66b0e;
+    border-bottom: #f66b0e solid 1px;
+}
+
+/* CSS untuk Bulan dan Button Cari*/
+.btn {
+    margin-top: 2%;
+    width: 9.5vw;
+    height: 2vw;
+    color: white;
+    background-color: #f66b0e;
+}
+
+.btn.btn-icon {
+    width: 2vw;
+}
+.dropdown {
+    background-color: transparent;
+}
+
+.box-tanggal {
+    margin-bottom: 2%;
+}
+
+.box-tanggal p {
+    margin: 0%;
+}
+
+.box-tanggal .form-control {
+    margin-bottom: 8%;
+}
+
+/* buat tulisan di navbar  */
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #f66b0e;
+    border-bottom: #f66b0e solid 1px;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #f66b0e;
+    border-bottom: #f66b0e solid 1px;
+}
+
+/* CSS untuk tabel barang */
+table {
+    /* border: 1px solid black; */
+    table-layout: fixed;
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid black;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    padding: 10px;
+}
+
+.tabel-bos {
+    display: flex;
+    justify-content: center;
+}
+
+.facture-fc {
+    display: flex;
+    justify-content: center;
+}

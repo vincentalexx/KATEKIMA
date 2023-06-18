@@ -75,4 +75,11 @@ class UserController extends Controller
             return redirect(route('user.signin'))->withErrors('Username atau password tidak valid!');
         }
     }
+
+    public function logout()
+    {
+        Auth::logout();
+
+        return redirect()->route('user.signin');
+    }
 }

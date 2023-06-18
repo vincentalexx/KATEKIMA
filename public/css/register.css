@@ -45,6 +45,16 @@ input[type=text] {
     width: 400px;
 }
 
+input[type=email] {
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    caret-color: white;
+    background-color: #112B3C;
+    padding: 8px;
+    width: 400px;
+}
+
 input[type=password] {
     border-radius: 10px;
     border: 2px solid white;

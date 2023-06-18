@@ -73,7 +73,8 @@ hr {
     width: auto;
     height: auto;
 }
-.col-xs-2-5 .card-content {
+.col-xs-2-5 {
+    /* background-color: blue; */
     width: 100%;
     height: auto;
     margin: 0 3% 0 0;
@@ -82,15 +83,60 @@ hr {
     /* border: solid red 2px; */
     padding: 0 1rem 0 0;
     margin: 1% 0% 0% 0%;
-    line-height: 8px;
+    line-height: 20px;
     font-size: 18px;
     color: black;
     width: 60%;
+    /* background-color: red; */
     text-decoration: none;
 }
+
+.content-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    /* background-color: red; */
+}
+
+.all {
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color: #112b3c;
+    border: none;
+    font-size: 14px;
+    color: white;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.kanan {
+    width: 50%;
+    /* background-color: green; */
+}
+
+.sub-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .col-xs-2-5 .isi {
     /* border: solid red 2px; */
-    margin: 0 7% 0 3%;
+    /* background-color: aqua; */
+    width: 100%;
+    word-wrap: break-word;
+    /* margin: 0 7% 0 3%; */
+    /* border: 1px solid red; */
+    margin-bottom: 1vw;
+
 }
 .col-xs-2-5 .content-img {
     flex-basis: 50%;
@@ -99,10 +145,15 @@ hr {
 .col-xs-2-5 img {
     border-radius: 0;
 }
-.row b {
-    font-size: 32px;
-    text-align: center;
-    margin: 0 0 5% 0;
+
+.col-xs-2-5 .tulisan {
+    padding: 0 1rem 0 0;
+    /* margin: 1% 0% 0% 0%; */
+    line-height: 20px;
+    font-size: 18px;
+    color: black;
+    width: 60%;
+    white-space: normal;
 }
 
 /* Untuk Filter & Aksi */
@@ -124,17 +175,16 @@ hr {
 }
 .title .kategori p {
     font-size: 16px;
-    margin: 0% 0% 1% 0%;
+    /* margin: 0% 0% 1% 0%; */
 }
 .form-check-label {
     font-size: 14px;
 }
 .button-action {
-    /* border: solid red 1px; */
     width: 100%;
     height: auto;
 }
-.button-action .btn-primary {
+.button-action .btn {
     background-color: #112b3c;
     border: none;
     font-size: 14px;
@@ -185,4 +235,45 @@ hr {
     [class*="col-"] {
         width: 100%;
     }
+}
+
+
+/* CODINGAN SINAN */
+.konten-card {
+    display: flex;
+}
+
+
+input[type="submit"] {
+    justify-content: center;
+    padding: 3% 20%;
+    width: 12vw;
+    margin-top: 1vw;
+    background: #f66b0e;
+    color: white;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.btn:hover {
+    color: #112b3c;
+}
+
+/* buat tulisan di navbar  */
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #f66b0e;
+    border-bottom: #f66b0e solid 1px;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #f66b0e;
+    border-bottom: #f66b0e solid 1px;
 }

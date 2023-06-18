@@ -15,20 +15,23 @@
         <div class="bag">
             <h3>Username</h3>
             <input type="text" name="username" value="{{Session::get('username')}}" id="nameTxt">
-            @error('username')
-                <p class="error" style="color: red">{{ $message }}</p>
-            @enderror
         </div>
         <div class="bag">
             <h3>Password</h3>
             <input type="password" name="password" id="passTxt">
-            @error('password')
-                <p class="error" style="color: red">{{ $message }}</p>
-            @enderror
         </div>
         <input type="submit" value="Sign In" id="submitBtn">
         <div>
-            <a href="{{route('user.register')}}" style="text-decoration: none; color:white">Buat akun</a>
+            <a href="{{route('user.register')}}" style="text-decoration: none; color:white; font-weight:bold" >Buat akun</a>
+        </div>
+        <div style="color:red">
+            @if ($errors->any())
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li style="list-style-type: none">{{$error}}</li>
+                @endforeach
+            </ul>
+            @endif
         </div>
     </form>
 </body>

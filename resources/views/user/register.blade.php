@@ -28,7 +28,7 @@
         </div>
         <div class="bag">
             <h3>Email</h3>
-            <input type="text" name="email" id="email">
+            <input type="email" name="email" id="email">
             @error('email')
                 <p class="error" style="color: red">{{ $message }}</p>
             @enderror
