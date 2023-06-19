@@ -150,9 +150,10 @@ class ProductController extends Controller {
         $data = $request->validate([
             // 'image' => 'required|mimes:jpeg,png,jpg,gif',
             'name' => 'required',
-            'description' => 'required',
             'unit' => 'required',
-            'stock' => 'required|integer|min:0'
+            'stock' => 'required|integer|min:0',
+            'description' => 'required',
+            'category' => 'required'
         ]);
         // dd($request);
         $product->update($data);
@@ -221,19 +222,19 @@ class ProductController extends Controller {
         $date = $request->input('date');
         $year = date('Y', strtotime($date));
         $month = date('m', strtotime($date));
-    
+
         if ($date == null) {
             $product_action = product_action::all();
         } else {
             $product_action = product_action::whereYear('date', $year)->whereMonth('date', $month)->get();
         }
-    
+
         $products = Product::all();
-    
+
         return view('products.reportt', [
             'products' => $products,
             'product_action' => $product_action
         ]);
     }
-    
+
 }

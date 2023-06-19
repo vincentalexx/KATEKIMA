@@ -11,13 +11,14 @@
     <form class="container" method="post" action="{{route('user.store')}}">
         @csrf
         @method('post')
+        <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50">
         <h1>Register</h1>
         <div class="bag">
             <h3>Name</h3>
             <input type="text" name="name" id="name">
             @error('name')
                 <p class="error" style="color: red">{{ $message }}</p>
-            @enderror   
+            @enderror
         </div>
         <div class="bag">
             <h3>Username</h3>

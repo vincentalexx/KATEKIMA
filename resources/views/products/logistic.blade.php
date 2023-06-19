@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: #112B3C;">
+    <nav class="navbar navbar-expand-lg " style="background-color: #112B3C; z-index:10000">
         <div class="container">
             <a class="navbar-brand" href="{{ route('product.logistic') }}">
                 <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50">
@@ -86,9 +86,9 @@
                 <div class="kategori" style="padding-top: 10px">
                     <p>Berdasarkan Kategori</p>
                     <div class="input-group mb-3" style="border: lightgrey 1px solid; width: 82%;" >
-                        <input type="text" class="form-control" placeholder="Cari berdasarkan kategori" name="category" value="{{ request('category') }}" aria-label="Search by Category">
+                        <input type="text" class="form-control" placeholder="Cari kategori" name="category" value="{{ request('category') }}" aria-label="Search by Category">
                     </div>
-                </div>                
+                </div>
                 <button type="submit" class="btn">Filter</button>
             </form>
 

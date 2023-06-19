@@ -10,12 +10,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: #112B3C;">
+    <nav class="navbar navbar-expand-lg " style="background-color: #112B3C; z-index:10000">
         <div class="container">
             <a class="navbar-brand" href="{{ route('product.logistic') }}">
                 <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50">
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,7 +70,7 @@
                 <p>Dari: </p>
                 <input class="form-control" type="date" name="dateFrom" aria-label="Search">
             </div>
-            
+
             <div class="box-tanggal">
                 <p>Sampai: </p>
                 <input class="form-control" type="date" name="dateTo" aria-label="Search">
@@ -103,7 +103,7 @@
             {{ session('error') }}
         </div>
         @endif
-        
+
     </form>
 
     <form action="" method="POST">
@@ -136,11 +136,11 @@
                             @endif
                         @endforeach
                     @endforeach
-                    
                 </table>
             </div>
         </div>
     </form>
 </body>
+<footer style="height:50px"></footer>
 
 </html>

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg " style="background-color: #112B3C;">
+    <nav class="navbar navbar-expand-lg " style="background-color: #112B3C; z-index:10000">
         <div class="container">
             <a class="navbar-brand" href="{{ route('product.logistic') }}">
                 <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50">
@@ -65,8 +65,8 @@
                 <input class="btn" type="submit" value="Cari">
             </form>
         </div>
-        
-        
+
+
         @if (session('success'))
         <div class="alert alert-success">
             {{ session('success') }}
@@ -76,7 +76,7 @@
         @if (session('error'))
         <div class="alert alert-danger">
             {{ session('error') }}
-        </div> 
+        </div>
         @endif
     </form>
 
@@ -95,7 +95,7 @@
                         <th>Masuk</th>
                         <th>Keluar</th>
                     </tr>
-                
+
                     @foreach($products as $product)
                         @php
                             $masukTotal = 0;
@@ -127,7 +127,7 @@
                         @endif
                     @endforeach
 
-                </table>                
+                </table>
             </div>
         </div>
     </form>

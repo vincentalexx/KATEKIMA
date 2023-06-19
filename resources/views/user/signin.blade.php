@@ -12,6 +12,7 @@
         @csrf
         @method('post')
         <h1>Sign In</h1>
+        <img src="asset/Versi Ori - Hitam.png" alt="company-logo" width="253.75" height="50">
         <div class="bag">
             <h3>Username</h3>
             <input type="text" name="username" value="{{Session::get('username')}}" id="nameTxt">

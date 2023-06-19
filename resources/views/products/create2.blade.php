@@ -48,7 +48,7 @@
     <form class="container d-flex header">
         <div class="container d-flex justify-content-between pt-4">
             <div>
-                <a style="color: black; text-decoration: none;font-weight: 600"> < KEMBALI</a>
+                <a style="color: black; text-decoration: none;font-weight: 600" href="{{ route('product.logistic')}}"> < KEMBALI</a>
             </div>
             <div>
                 <h5><b>Buat Produk Baru</b></h5>
@@ -58,7 +58,7 @@
             </div>
         </div>
     </form>
-    
+
     <div class="form justify-content-center">
         <form class="container" action="" method="POST" enctype="multipart/form-data">
             @csrf

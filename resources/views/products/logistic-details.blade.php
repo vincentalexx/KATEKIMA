@@ -48,7 +48,7 @@
     <form>
         <div class="container d-flex justify-content-between pt-4">
             <div>
-                <a style="color: black; text-decoration: none;font-weight: 600"> < KEMBALI</a>
+                <a href="{{ route('product.logistic')}}" style="color: black; text-decoration: none;font-weight: 600"> < KEMBALI</a>
             </div>
             <div>
                 <h5><b>Detil Barang</b></h5>
@@ -114,7 +114,7 @@
                             <label>Kategori :</label>
 
                             {{-- <p style="font-weight: 700"> Kategori :</p> --}}
-                            <input type="text" name="stock" id="" readonly value="{{$products->category}} ">
+                            <input type="text" name="category" id="" readonly value="{{$products->category}} ">
                             {{-- <p> {{$products->stock}} </p> --}}
                         </div>
                     </div>
