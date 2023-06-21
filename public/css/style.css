@@ -9,6 +9,7 @@ a {
     text-decoration: none;
 }
 
+
 .navbar {
     position: -webkit-sticky;
     position: sticky;
@@ -86,7 +87,8 @@ hr {
 .row img{
     display: inline;
     max-height: 190px;
-    max-width: 200px;
+    height: 190px;
+    /* max-width: 200px; */
     vertical-align: middle;
 }
 
@@ -153,6 +155,29 @@ hr {
     width: 100%;
     height: auto;
 }
+.card {
+    background-color: #fdfdfd;
+
+    /* border: none; */
+    padding: 10px;
+}
+
+
+.card input {
+    width: 100%;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #fdfdfd;
+
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.04s;
+  }
+  
 
 .button-action .btn-primary {
     background-color: #112b3c;

@@ -11,8 +11,10 @@
     <form class="container" method="post" action="{{route('user.store')}}">
         @csrf
         @method('post')
-        <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50">
-        <h1>Register</h1>
+        {{-- <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50"> --}}
+        <img src="asset/Group 2.png" alt="company-logo"  class="logo">
+
+        {{-- <h1>Register</h1> --}}
         <div class="bag">
             <h3>Name</h3>
             <input type="text" name="name" id="name">
@@ -55,7 +57,7 @@
             <input type="submit" value="Sign Up" id="submitBtn">
         </div>
         <div>
-            <a href="{{route('user.signin')}}" style="text-decoration: none; color:white">Sign In</a>
+            <a href="{{route('user.signin')}}" style="color:white; font-weight:light">Sign In</a>
         </div>
     </form>
 </body>

@@ -15,7 +15,9 @@
     <nav class="navbar navbar-expand-lg " style="background-color: #112B3C; z-index:10000">
         <div class="container">
             <a class="navbar-brand" href="{{ route('product.logistic') }}">
-                <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50">
+                {{-- <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50"> --}}
+                
+                <img src="asset/Group 4.png" alt="company-logo" height="60">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -116,7 +118,8 @@
 
         <div class="row">
             @foreach($products as $product)
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 card" style="margin-left: 10px; margin-top: 10px; width: 24%">
+                    
                     <a  href="{{route('product.logisticdetails', $product->id)}}" class="konten-card">
                         @if ($product->image)
                             <div class="productimg">
@@ -124,7 +127,7 @@
                             </div>
                         @endif
                         <div class="keterangan d-flex" style="justify-content: flex-start">
-                            <div class="isi">
+                            {{-- <div class="isi">
                                 <p>ID</p>
                                 <p>Nama</p>
                                 <p>Stok</p>
@@ -133,11 +136,14 @@
                                 <p>:</p>
                                 <p>:</p>
                                 <p>:</p>
-                            </div>
+                            </div> --}}
                             <div class="isi">
-                                <p>{{ $product->id }}</p>
+                                {{-- <p>{{ $product->id }}</p>
                                 <p>{{ $product->name }}</p>
-                                <p>{{ $product->stock }}</p>
+                                <p>{{ $product->stock }}</p> --}}
+                                <input type="text" value="ID         : {{ $product->id }}" readonly>
+                                <input type="text" value="Nama : {{ $product->name }}" readonly class="truncate">
+                                <input type="text" value="Stok     : {{ $product->stock }}" readonly>
                             </div>
                         </div>
                     </a>

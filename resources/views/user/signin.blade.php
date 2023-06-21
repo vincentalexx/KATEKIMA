@@ -11,8 +11,8 @@
     <form class="container" method="post" action="{{route('user.storeSignin')}}">
         @csrf
         @method('post')
-        <h1>Sign In</h1>
-        <img src="asset/Versi Ori - Hitam.png" alt="company-logo" width="253.75" height="50">
+        <img src="asset/Group 2.png" alt="company-logo"  class="logo">
+        {{-- <h1>Sign In</h1> --}}
         <div class="bag">
             <h3>Username</h3>
             <input type="text" name="username" value="{{Session::get('username')}}" id="nameTxt">
@@ -23,7 +23,7 @@
         </div>
         <input type="submit" value="Sign In" id="submitBtn">
         <div>
-            <a href="{{route('user.register')}}" style="text-decoration: none; color:white; font-weight:bold" >Buat akun</a>
+            <a href="{{route('user.register')}}" style="color:white; font-weight:light" >Buat akun</a>
         </div>
         <div style="color:red">
             @if ($errors->any())

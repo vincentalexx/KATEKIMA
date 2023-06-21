@@ -14,7 +14,9 @@
     <nav class="navbar navbar-expand-lg " style="background-color: #112B3C;">
         <div class="container">
             <a class="navbar-brand" href="{{ route('product.logistic') }}">
-                <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50">
+                {{-- <img src="asset/Versi Tulisan-Putih.png" alt="company-logo" width="253.75" height="50"> --}}
+                <img src="asset/Group 4.png" alt="company-logo" height="60">
+
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +75,7 @@
         </div>
         <div class="dropdown container d-flex justify-content-between">
             <div class="box">
-                <p><b>Nama Barang</b></p>
+                <p style="margin-bottom: 10px"><b>Nama Barang</b></p>
                 <select name="product" id="select">
                     @foreach($products as $product)
                     <option value="{{ $product->id }}">{{ $product->name }}</option>
